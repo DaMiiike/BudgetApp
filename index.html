@@ -11,20 +11,30 @@
 <body>
     <h1>BudgetApp</h1>
     <form action="">
-    <input type="number" placeholder="Inkomst" name="" id="">
-    <input type="number" placeholder="Kostnad" name="" id="">
+    <select>
+        <option value="Choose">Välj</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    
+        <input type="number" placeholder="Inkomst" name="" id="">
+        <input type="number" placeholder="Kostnad" name="" id="">
+        <button>Lägg till</button>
     </form>
-    <table>
-    
-        <tr>
-            <th>ruta 1</th>
-            <th>ruta 2</th>
-        </tr>
-        <tr>
-            <th>2</th>
-            <th>3</th>
-        </tr>
-    
-    </table>
+
+    <h1>Inkomst</h1>
+    <div class="income-container">
+
+    </div>
+
+    <h1>Kostnad</h1>
+    <div class="cost-container">
+
+    </div>
+
+    <h1>Total</h1>
+    <div class="total-container">
+        
+    </div>
 </body>
 </html>
