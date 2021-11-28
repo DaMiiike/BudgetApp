@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <h1>BudgetApp</h1>
     <form action="">
     <select>
-        <option value="Choose">Välj</option>
+        <option value="choose">Välj</option>
         <option value="+">+</option>
         <option value="-">-</option>
     </select>
     
-        <input type="number" placeholder="Inkomst" name="" id="">
-        <input type="number" placeholder="Kostnad" name="" id="">
+        <input type="text" placeholder="Händelse" name="" id="description">
+        <input type="number" placeholder="Summa" name="" id="amount">
         <button>Lägg till</button>
     </form>
 
@@ -34,7 +34,7 @@
 
     <h1>Total</h1>
     <div class="total-container">
-        
+
     </div>
 </body>
 </html>
