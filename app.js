@@ -7,7 +7,9 @@ document.querySelector("button").addEventListener("click", inputBudget)
 let incomeList = [];
 let costList = [];
 
-
+// // Totals
+// let incomeTot = 0;
+// let costTot = 0;
 
 function inputBudget(e) {
     e.preventDefault();
@@ -24,7 +26,7 @@ function inputBudget(e) {
 
         document
         .querySelector(".income-container")
-        .innerHTML +=`<li class="income-list"> ${description} : ${amount}Kr</li>`;
+        .innerHTML +=`<li class="income-list"> ${description} : ${amount} Kr</li>`;
 
         incomeList.push(amount)
 
@@ -36,7 +38,7 @@ function inputBudget(e) {
 
         document
         .querySelector(".cost-container")
-        .innerHTML += `<li class="cost-list"> ${description} : ${amount}Kr</li>`;
+        .innerHTML += `<li class="cost-list"> ${description} : ${amount} Kr</li>`;
 
         costList.push(amount)
         console.log(costList);
@@ -47,23 +49,26 @@ function inputBudget(e) {
     }
     
 
+    let incomeSum = 0;
+    for (var i = 0; i < incomeList.length; i++) {
+        
+        incomeSum += Number(incomeList[i]);
+        
+    }
+    console.log("Total intäkt " + incomeSum) // done, to be removed on final stage
 
-    
+    let costSum = 0;
+    for (var i = 0; i < costList.length; i++) {
 
-}
+        costSum += Number(costList[i]);
+    }
+    console.log("Total kostnad " + costSum); // done, to be removed on final stage
 
-function totalSum(e) {
-    e.preventDefault();
-    // Totals
-    let incomeTot = 0;
-    let costTot = 0;
+    let totSum = incomeSum - costSum;
 
-    
-    incomeList.map( (e)=> {
+    console.log("hej" + totSum); // done, to be removed on final stage
 
-
-    console.log(parseFloat(e))
-    incomeTot += e;
-
-    })
+    document
+    .querySelector(".total-container")
+    .innerHTML = `<p>Totalt: ${totSum} Kr</p>`
 }
