@@ -3,14 +3,17 @@
 document.querySelector("button").addEventListener("click", inputBudget)
 
 
-//Lists
+// Lists
 let incomeList = [];
 let costList = [];
 
 
+
 function inputBudget(e) {
     e.preventDefault();
-    
+
+
+
     // Value
     const select = document.querySelector("select")
     const description = document.querySelector("#description").value;
@@ -43,6 +46,24 @@ function inputBudget(e) {
         alert("Var vänlig och välj ett alternativ!")
     }
     
+
+
+    
+
 }
-// console.log(amount.value);
-// console.log(description.value);
+
+function totalSum(e) {
+    e.preventDefault();
+    // Totals
+    let incomeTot = 0;
+    let costTot = 0;
+
+    
+    incomeList.map( (e)=> {
+
+
+    console.log(parseFloat(e))
+    incomeTot += e;
+
+    })
+}
