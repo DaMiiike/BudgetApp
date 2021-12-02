@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<!-- 
+Inlämningsuppgift 2 BudgetApp - Frontendutveckling 50YHP -  Medieinstitutet
+==MADE BY:======================================================================================
+  __  __   _          _                      _     _______                  _                 
+ |  \/  | (_)        | |       Mike         | |   |__   __|                (_)                
+ | \  / |  _    ___  | |__     __ _    ___  | |      | |      __ _   _ __   _    __ _    ___  
+ | |\/| | | |  / __| | '_ \   / _` |  / _ \ | |      | |     / _` | | '__| | |  / _` |  / _ \ 
+ | |  | | | | | (__  | | | | | (_| | |  __/ | |      | |    | (_| | | |    | | | (_| | | (_) |
+ |_|  |_| |_|  \___| |_| |_|  \__,_|  \___| |_|      |_|     \__,_| |_|    |_|  \__,_|  \___/ 
+==========================================WEI21S================================================
+Github repo - git@github.com:DaMiiike/BudgetApp.git
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,32 +21,35 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>BudgetApp</h1>
-    <form>
-    <select>
-        <option value="choose">Välj</option>
-        <option value="+">+</option>
-        <option value="-">-</option>
-    </select>
-    
-        <input type="text" placeholder="Händelse" id="description">
-        <input type="number" placeholder="Summa" id="amount">
-        <button>Lägg till</button>
-    </form>
+    <section class="app">
+        <h1>BudgetApp</h1>
+        <section class="input">
+            <form>
+            <select>
+                <option value="choose">Välj</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            
+                <input type="text" placeholder="Händelse" id="description">
+                <input type="number" placeholder="Summa" id="amount">
+                <button>Lägg till</button>
+            </form>
+        </section>
+        <h1>Inkomst</h1>
+        <div class="income-container">
+            <!--INCOME AMOUNT GOES HERE-->
+        </div>
 
-    <h1>Inkomst</h1>
-    <div class="income-container">
-        <!--INCOME AMOUNT GOES HERE-->
-    </div>
+        <h1>Kostnad</h1>
+        <div class="cost-container">
+            <!--COST AMOUNT GOES HERE-->  
+        </div>
 
-    <h1>Kostnad</h1>
-    <div class="cost-container">
-        <!--COST AMOUNT GOES HERE-->  
-    </div>
-
-    <h1>Total</h1>
-    <div class="total-container">
-        <!--TOTAL AMOUNT GOES HERE-->
-    </div>
+        <h1>Total</h1>
+        <div class="total-container">
+            <!--TOTAL AMOUNT GOES HERE-->
+        </div>
+    </section>
 </body>
 </html>

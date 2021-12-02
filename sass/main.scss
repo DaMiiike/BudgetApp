@@ -1,5 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: burlywood;
+    // background-color: burlywood;
+    
+}
+body {
+    background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
+    height: 100%;
+    display: flex;
+    
+    
+}
+section {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    width: 70%;
+    border: 2px red solid;
+    border-radius: 5px;
 }
